@@ -1,0 +1,32 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin card-style {
+    background: white;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: $breakpoint-sm) { @content; }
+    }
+    @if $breakpoint == md {
+      @media (max-width: $breakpoint-md) { @content; }
+    }
+    @if $breakpoint == lg {
+      @media (max-width: $breakpoint-lg) { @content; }
+    }
+    @if $breakpoint == xl {
+      @media (max-width: $breakpoint-xl) { @content; }
+    }
+  }

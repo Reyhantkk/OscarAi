@@ -1,0 +1,93 @@
+.header {
+    background: $primary-color;
+    color: $light-color;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: $header-height;
+  
+    &__logo {
+      img {
+        height: 50px;
+        transition: opacity 0.3s;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  
+    .nav {
+      &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      &__item {
+        margin: 0 0.5rem;
+      }
+  
+      &__link {
+        color: $light-color;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s;
+        border-radius: $border-radius;
+  
+        &:hover {
+          background: lighten($primary-color, 10%);
+        }
+      }
+    }
+  
+    .search {
+      &__box {
+        display: flex;
+        padding: 0 1rem;
+      }
+  
+      &__input {
+        padding: 0.5rem;
+        border: none;
+        border-radius: $border-radius 0 0 $border-radius;
+        min-width: 200px;
+      }
+  
+      &__button {
+        padding: 0.5rem 1rem;
+        background: $secondary-color;
+        color: $light-color;
+        border: none;
+        border-radius: 0 $border-radius $border-radius 0;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: darken($secondary-color, 10%);
+        }
+      }
+    }
+  
+    @include responsive(md) {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+  
+      .nav {
+        width: 100%;
+        margin: 1rem 0;
+  
+        &__list {
+          flex-direction: column;
+        }
+  
+        &__item {
+          margin: 0.3rem 0;
+        }
+      }
+    }
+  }

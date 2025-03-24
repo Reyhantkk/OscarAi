@@ -1,0 +1,47 @@
+.article {
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+  
+    &-card {
+      @include card-style;
+  
+      &__image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      &__content {
+        padding: 1rem;
+      }
+  
+      &__title {
+        font-family: $font-headings;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: $dark-color;
+      }
+  
+      &__excerpt {
+        color: $text-light;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+  
+      &__link {
+        color: $secondary-color;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: darken($secondary-color, 15%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }

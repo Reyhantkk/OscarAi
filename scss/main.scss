@@ -1,0 +1,35 @@
+// Utilities
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/functions';
+
+// Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $light-color;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/cards';
+@import 'components/forms';
+
+// Pages
+@import 'pages/home';
+@import 'pages/article';
