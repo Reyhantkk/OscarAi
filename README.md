@@ -1,0 +1,2 @@
+# OscarAi
+yapay zeka hizmeti
