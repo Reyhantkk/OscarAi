@@ -1,16 +1,14 @@
 {
   "name": "oscarai",
   "version": "1.0.0",
-  
   "description": "yapay zeka hizmeti",
   "main": "index.js",
- "scripts": {
-  "start": "node index.js",
-  "sass": "sass scss/main.scss css/main.css",
-  "sass:watch": "sass --watch scss/main.scss:css/main.css",
-  "test": "echo \"Error: no test specified\" && exit 1"
-}
-,
+  "scripts": {
+    "start": "node index.js",
+    "sass": "sass scss/main.scss css/main.css",
+    "sass:watch": "sass --watch scss/main.scss:css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Reyhantkk/OscarAi.git"
@@ -24,5 +22,11 @@
   "homepage": "https://github.com/Reyhantkk/OscarAi#readme",
   "devDependencies": {
     "sass": "^1.86.0"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   }
 }
