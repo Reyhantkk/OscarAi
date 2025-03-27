@@ -73,9 +73,6 @@ body {
   cursor: pointer;
   transition: background 0.3s;
 }
-.header .search__button:hover {
-  background: rgb(33.1380753138, 125.1882845188, 186.8619246862);
-}
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -134,10 +131,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
-}
-.article-card__link:hover {
-  color: rgb(29.2970711297, 110.6778242678, 165.2029288703);
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

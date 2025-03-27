@@ -38,10 +38,7 @@
         font-weight: bold;
         transition: color 0.3s;
   
-        &:hover {
-          color: darken($secondary-color, 15%);
-          text-decoration: underline;
-        }
+        
       }
     }
   }

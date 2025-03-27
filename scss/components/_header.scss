@@ -66,9 +66,7 @@
         cursor: pointer;
         transition: background 0.3s;
   
-        &:hover {
-          background: darken($secondary-color, 10%);
-        }
+       
       }
     }
   
